@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+<!-- form generator -->
+
+<html lang="en">
+
+<head>
+    <title>Loan Calculator
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+
+
+</head>
+
+
+
+<body>
+
+        <h1>Loan Calculator</h1>
+
+
+        <form class="col-sm-12" id="submission" action="/action_page.php" method="post">
+
+            <P>Loan Name:</P>
+            <input type="text" name="name" placeholder="TD Car Loan"><br><br>
+
+            <p>Principle:</p>
+             <input type="number" name="principle" placeholder="$5000" min="1" step=".01" required><br><br>
+
+            <p>Annual Interest Rate:</p>
+            <input type="number" name="interest" placeholder="4.5%" min="0" max="40" step=".01" required><br><br>
+
+            <p>Monthly Payment:</p>
+             <input type="number" name="payment" placeholder="$200" min="1" step=".01" required><br><br><br>
+
+            <button id="button" type="button" value="send" onclick="submitForm()" class="btn btn-primary">Submit</button>    
+
+            <input type="button" value="Reset Form" onclick="resetForm()"><br><br>
+
+            <button id="button" type="button" value="send" onclick="total()" class="btn btn-primary">Total</button> 
+            
+            <input type="button" value="Reset Total" onclick="resetTotals()"><br><br>
+                
+          </form>
+
+    <div id="result"></div>
+    <div id="total"></div>
+    </section>
+
+</body>
+
+
+</html>
